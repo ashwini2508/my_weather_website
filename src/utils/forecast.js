@@ -20,7 +20,8 @@ const forecast = (latitude, longitude, callback) =>
         }
         else
         {
-            callback(undefined,  body.current.weather_descriptions[0] + ' conditions. It is currently ' + body.current.temperature + ' degrees celcius, Feels like ' + body.current.feelslike + ' degrees celcius and there is ' + body.current.precip + ' % chances of rain')
+            
+            callback(undefined,  body.current.weather_descriptions[0] + ' conditions. It is currently ' + body.current.temperature + ' degrees celcius out, Feels like ' + body.current.feelslike + ' degrees celcius. The humidity is ' + body.current.humidity + '% and and there is ' +body.current.precip + ' % chances of rain')
         }
     })
 
